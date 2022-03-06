@@ -20,7 +20,7 @@ public class MedicalHistory {
     @Id
     @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
     @ManyToMany
     @Column(name = "patient")

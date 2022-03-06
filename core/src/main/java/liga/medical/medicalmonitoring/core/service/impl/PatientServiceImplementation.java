@@ -11,7 +11,7 @@ public class PatientServiceImplementation implements PatientService {
 
 
     @Override
-    public Patient findById(Integer id) {
+    public Patient findById(Long id) {
         return null;
     }
 
@@ -26,7 +26,7 @@ public class PatientServiceImplementation implements PatientService {
     }
 
     @Override
-    public void deleteById(Integer id) {
+    public void deleteById(Long id) {
 
     }
 

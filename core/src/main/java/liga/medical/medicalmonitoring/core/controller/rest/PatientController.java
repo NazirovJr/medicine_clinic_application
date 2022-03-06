@@ -19,7 +19,7 @@ public class PatientController {
     }
 
     @GetMapping("/{id}")
-    public Patient findPatient(@PathVariable("id") Integer id){
+    public Patient findPatient(@PathVariable("id") Long id){
         if (patientService.findById(id) != null){
             return patientService.findById(id);
         }
@@ -40,7 +40,7 @@ public class PatientController {
     }
 
     @DeleteMapping("/{id}")
-    public Patient deletePatient(@PathVariable("id") Integer id){
+    public Patient deletePatient(@PathVariable("id") Long id){
         Patient patient = patientService.findById(id);
 
         if (patient == null){

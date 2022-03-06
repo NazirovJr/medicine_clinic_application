@@ -22,7 +22,7 @@ public class MedicalHistoryController {
     }
 
     @GetMapping("/{id}")
-    public MedicalHistory findMedicalHistoryById(@PathVariable("id") Integer id) {
+    public MedicalHistory findMedicalHistoryById(@PathVariable("id") Long id) {
         if (medicalHistoryService.findById(id) != null) {
             return  medicalHistoryService.findById(id);
         }
@@ -57,7 +57,7 @@ public class MedicalHistoryController {
     }
 
     @DeleteMapping("/{id}")
-    public MedicalHistory deleteById(@PathVariable("id") Integer id) {
+    public MedicalHistory deleteById(@PathVariable("id") Long id) {
         MedicalHistory medicalHistory = medicalHistoryService.findById(id);
         if (medicalHistory == null) {
             throw new RuntimeException("MedicalHistory not founded");

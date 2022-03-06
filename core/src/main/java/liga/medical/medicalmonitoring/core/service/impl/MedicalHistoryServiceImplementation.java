@@ -10,7 +10,7 @@ import java.util.List;
 public class MedicalHistoryServiceImplementation implements MedicalHistoryService {
 
     @Override
-    public MedicalHistory findById(Integer id) {
+    public MedicalHistory findById(Long id) {
         return null;
     }
 
@@ -25,7 +25,7 @@ public class MedicalHistoryServiceImplementation implements MedicalHistoryServic
     }
 
     @Override
-    public void deleteById(Integer id) {
+    public void deleteById(Long id) {
 
     }
 
